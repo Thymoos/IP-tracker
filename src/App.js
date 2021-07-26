@@ -8,7 +8,7 @@ function App() {
      <header>
        <h1>IP Address Tracker</h1>
        <form action="">
-         <input type="text" placeholder="Search for any IP address or domain" />
+         <input type="text" spellcheck="false" placeholder="Search for any IP address or domain" />
          <button type="submit">&gt;</button>
        </form>
      </header>
