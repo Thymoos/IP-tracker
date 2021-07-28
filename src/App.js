@@ -1,5 +1,5 @@
 import './App.css';
-import Map from './components/Map';
+import Tracker from './components/Tracker';
 import Display from './components/Display';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
        </form>
      </header>
       <Display/>
-     <Map/>
+     <Tracker/>
     </div>
   );
 }

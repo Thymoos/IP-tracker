@@ -16,6 +16,7 @@ div.display-wrapper {
     max-width: 1200px;
     padding-left: 20px;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 div.display-wrapper div {
