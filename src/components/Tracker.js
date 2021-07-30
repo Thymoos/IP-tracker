@@ -1,10 +1,8 @@
-import React from "react";
-import { MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap} from "react-leaflet";
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import L from 'leaflet';
-
-const position = [49.688919, 19.200649];
+import React from 'react';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -13,22 +11,28 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-export default function Map() {
+export default function Map(props) {
+ 
+function ChangeMapView({ coords }) {
+  const map = useMap();
+  map.setView(coords, map.getZoom());
+
+  return null;
+}
 
   return (
-    <MapContainer center={position} zoom={13} style={{ height: "74vh" , zIndex: 1}}>
+    <MapContainer center={[props.cords.latitude, props.cords.longitude]} zoom={13} style={{ height: "74vh" , zIndex: 1}}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={position}>
+      <Marker position={[props.cords.latitude, props.cords.longitude]}>
         <Popup><span>
-          Placeholder <br />
-          Here might be something <br />
-          In the future
+          Placeholder
           </span>
         </Popup>
       </Marker>
+      <ChangeMapView coords={[props.cords.latitude, props.cords.longitude]}/>
     </MapContainer>
   );
 }
