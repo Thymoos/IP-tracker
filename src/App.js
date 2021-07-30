@@ -9,12 +9,12 @@ const defaultCords = {
 }
 
 const defaultData = {
-  "ip": 111,
+  "ip": "-",
   "location": {
-    "city": "Żywiec",
-    "timezone": 420
+    "city": "-",
+    "timezone": "-"
   },
-  "isp": "Monke"
+  "isp": "-"
 }
 
 function App() {
@@ -44,15 +44,21 @@ function App() {
       fetchData();
   }, [click]);
 
+  let input = "";
+
   const handleChange = (e) =>{
-    const input = e.target.value;
-    
-    setSearch(input);
+    input = e.target.value;
   }
 
 
   const handleClick = (e) =>{
     e.preventDefault();
+    if(input.includes(".")){
+      setSearch(input);
+      }
+      else{
+        window.alert("This is not ip address or domain");
+      }
     setClick(!click)
   }
 
