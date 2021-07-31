@@ -4,7 +4,14 @@
     padding: 0;
 }
 
-body {
+:root {
     --text-light: hsl(0, 0%, 59%);
     --text-dark: hsl(0, 0%, 17%);
+    --height: 74vh;
+}
+
+@media(max-width: 420px) {
+    :root {
+        --height: 58vh;
+    }
 }

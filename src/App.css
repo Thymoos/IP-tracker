@@ -52,6 +52,28 @@ header form button {
     cursor: pointer;
 }
 
+@media(max-width: 420px) {
+    header {
+        height: 42vh;
+    }
+
+    header h1 {
+        font-weight: 400;
+        padding-top: 3vh;
+    }
+
+    header form {
+        top: 14vh;
+        left: 50vw;
+        height: 40px;
+        width: 330px;
+    }
+
+    header form button {
+        width: 100px;
+    }
+}
+
 @media(max-width: 380px) {
     header {
         height: 42vh;
@@ -74,7 +96,7 @@ header form button {
     }
 }
 
-@media(max-width: 420px) {
+@media(max-width: 320px) {
     header {
         height: 42vh;
     }
@@ -88,7 +110,7 @@ header form button {
         top: 14vh;
         left: 50vw;
         height: 40px;
-        width: 330px;
+        width: 300px;
     }
 
     header form button {
