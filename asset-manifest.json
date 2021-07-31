@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/IP-tracker/static/css/main.a8e60af3.chunk.css",
-    "main.js": "/IP-tracker/static/js/main.da7ce18f.chunk.js",
-    "main.js.map": "/IP-tracker/static/js/main.da7ce18f.chunk.js.map",
+    "main.css": "/IP-tracker/static/css/main.b4f78975.chunk.css",
+    "main.js": "/IP-tracker/static/js/main.b59b846b.chunk.js",
+    "main.js.map": "/IP-tracker/static/js/main.b59b846b.chunk.js.map",
     "runtime-main.js": "/IP-tracker/static/js/runtime-main.1a6125ec.js",
     "runtime-main.js.map": "/IP-tracker/static/js/runtime-main.1a6125ec.js.map",
     "static/css/2.da98c186.chunk.css": "/IP-tracker/static/css/2.da98c186.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f25d8925.chunk.js.map": "/IP-tracker/static/js/2.f25d8925.chunk.js.map",
     "index.html": "/IP-tracker/index.html",
     "static/css/2.da98c186.chunk.css.map": "/IP-tracker/static/css/2.da98c186.chunk.css.map",
-    "static/css/main.a8e60af3.chunk.css.map": "/IP-tracker/static/css/main.a8e60af3.chunk.css.map",
+    "static/css/main.b4f78975.chunk.css.map": "/IP-tracker/static/css/main.b4f78975.chunk.css.map",
     "static/js/2.f25d8925.chunk.js.LICENSE.txt": "/IP-tracker/static/js/2.f25d8925.chunk.js.LICENSE.txt",
     "static/media/App.css": "/IP-tracker/static/media/pattern-bg.a60a3c85.png"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.1a6125ec.js",
     "static/css/2.da98c186.chunk.css",
     "static/js/2.f25d8925.chunk.js",
-    "static/css/main.a8e60af3.chunk.css",
-    "static/js/main.da7ce18f.chunk.js"
+    "static/css/main.b4f78975.chunk.css",
+    "static/js/main.b59b846b.chunk.js"
   ]
 }
